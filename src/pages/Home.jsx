@@ -5,10 +5,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-gray-50 to-gray-100 px-6 py-10">
       {/* Header Section */}
       <div className="flex flex-col items-center text-center max-w-3xl">
-        {/* Logo */}
-        <div className="mb-6">
-          <img src="https://www.bing.com/ck/a?!&&p=05327fe53de55d80c10648785cbd23cdea2ce37207e57715425f852c34dc4672JmltdHM9MTc2MjM4NzIwMA&ptn=3&ver=2&hsh=4&fclid=34b4f063-873b-62e8-2cb3-e6f886b96373&u=a1L2ltYWdlcy9zZWFyY2g_cT1uY2JhK2xvZ28maWQ9MzU2Q0MwQUJBMzU3ODI2MkNCMzg3RkE2QUFCNkY2NUU2NzQ0REU4QyZGT1JNPUlRRlJCQQ" alt="NCBA Logo" className="h-24 object-contain" />
-        </div>
 
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4 tracking-tight">

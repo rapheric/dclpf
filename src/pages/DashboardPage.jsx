@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { Navigate } from "react-router-dom";
 import Sidebar from "../components/Dashboard/Sidebar"
-import DashboardContent from "../components/Dashboard/DashboardContent";
+import DashboardContent from "../components/Dashboard/DashboardContentrm";
 import { FaBars } from "react-icons/fa";
 
 export default function DashboardPage() {
@@ -26,10 +26,10 @@ export default function DashboardPage() {
       />
 
       {/* Main Section */}
-      <div className="flex-1 flex flex-col overflow-y-auto">
+      <div className="flex-1 flex flex-col overflow-y-auto max-w-full ">
         {/* Header */}
         <header className="bg-white shadow p-4 flex justify-between items-center sticky top-0 z-30">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <button
               onClick={toggleSidebar}
               className="text-[#5B2C6F] hover:text-[#4A235A] lg:hidden"
@@ -37,14 +37,13 @@ export default function DashboardPage() {
               <FaBars size={22} />
             </button>
             <h1 className="text-xl font-bold text-gray-800">
-              NCBA Dashboard
-            </h1>
+              NCBA RM Dashboard
+            </h1> 
           </div>
           <p className="text-gray-600 text-sm sm:text-base">
             {user.name} ({user.role})
           </p>
         </header>
-
         {/* Content */}
         <DashboardContent active={activeSection} user={user} />
       </div>
